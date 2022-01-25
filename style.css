@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+
+
+header
+{
+width: 100vw;
+height: 100vh;
+color: whitesmoke;
+background: url(/samuele-errico-piccarini-FMbWFDiVRPs-unsplash.jpg) no-repeat center center/cover;
+
+}
+/* 
+.img,.img2,.img3
+{
+    width: 100vh;
+    height: 100vh;
+
+
+
+} */
+
+nav{
+    display: flex;
+    width: 100%;
+
+padding: 2rem 2rem;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav ul{
+ 
+    display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left:5rem;
+}
+nav ul li{
+    list-style-type:none ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+padding: 40px 40px;
+font-size: 1rem;
+}
+
+.logo{
+    padding: 0px 0px;
+font-size: 1.5rem;
+margin-left:  2rem;
+
+
+}
+.logo img{
+    position: relative;
+    width: 100px;
+
+}
+
+.logo img:hover{
+   
+transform: translateX(50px);
+transition: all ease 1.9s;
+}
+
+.fa-bars{
+    color: rgb(223, 215, 215);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.fa-bars:hover{
+transform: scale(110%);
+transform: rotate(360deg);
+transition: all ease 1s;
+
+}
+.right-fixed{
+    position: absolute;
+    right: 50px;
+}
+.search{
+
+
+    width: 500px;
+margin: 0 5rem;
+ padding:0 5rem;display: flex;align-items: center;
+}
+.search input{
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 60px;
+    border: 0;
+    color: whitesmoke;
+    
+}
+.fa-search{
+    font-size: 2rem;
+}
+.fa-search:hover{
+transform: rotate(360deg);
+transition:  all ease 3s;
+}
+
+input:focus{
+    outline: 0;
+}
+
+
+.fa-circle{
+  
+font-size: 0.6rem;
+margin: 20px;
+}
+
+.mobile
+{
+    display: flex;
+    width: 300px;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.clm{
+    display: flex;flex-direction: column;
+    position: absolute;
+    top: 300px;
+    margin-left: 5rem;
+}
+
+
+
+
+
+.grid-2{
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(2,1fr);
+    padding: 50px 100px;
+  
+}
+
+.text{
+    font-size: 4rem;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.349);
+}
+
+.box{
+    width: 500px ;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.123);
+padding: 100px 100px;
+
+backdrop-filter: blur(5px);
+   
+    font-size: 1rem;
+}
+.info{
+    margin-top: 10px;
+}
+
+.date{
+    margin: 50px 0px;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
