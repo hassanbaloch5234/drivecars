@@ -15,7 +15,7 @@ width: 100vw;
 height: 100vh;
 color: whitesmoke;
 background: url(samuele-errico-piccarini-FMbWFDiVRPs-unsplash.jpg) no-repeat center center/cover;
-
+animation: blacktoimg 6s ease;
 }
 /* 
 .img,.img2,.img3
@@ -31,6 +31,7 @@ nav{
     display: flex;
     width: 100%;
 
+    animation: slideinformtop 1s ease-in;
 padding: 1rem 1rem;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -58,11 +59,14 @@ font-size: 1.5rem;
 margin-left:  2rem;
 
 
+
 }
 .logo img{
     position: relative;
     width: 100px;
 
+
+    animation: slideinformleft 1s ease-in;
 }
 
 .logo img:hover{
@@ -134,12 +138,57 @@ margin: 20px;
 }
 
 
+@keyframes slideinformleft{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 
 
 
+}
+
+@keyframes slideinformright{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 
 
 
+}
+
+@keyframes slideinformtop{
+    0%{
+        transform: translateY(-100%)
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+
+
+}
+
+
+
+@keyframes blacktoimg{
+
+    0%{
+        background-color: black;
+        background:url(./erik-mclean-ZRns2R5azu0-unsplash.jpg)no-repeat center center/cover;
+    }
+   100%{
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
 
 
 
@@ -168,6 +217,8 @@ margin: 20px;
 text-align: center;
 background-color: rgba(0, 0, 0, 0.349);
 height: 100%;
+
+animation: slideinformleft 1s ease-in;
 }
 
 .box{
@@ -175,7 +226,7 @@ height: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.123);
 padding: 50px 100px;
-
+animation: slideinformright 1s ease-in;
 backdrop-filter: blur(5px);
    
     font-size: 1rem;
@@ -188,4 +239,11 @@ backdrop-filter: blur(5px);
     margin: 50px 0px;
     font-size: 2rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
 }
